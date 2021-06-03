@@ -35,6 +35,7 @@ assert round(results_main_metric['avg'], 1) == 47.6
 
 ## Data Organization
 ```bash
+.
 ├── data-eval  # For evaluation usage. One can refer to ./unsupse_benchmark/evaluators to learn about how to loading these data.
 │   ├── askubuntu
 │   │   ├── dev.txt
@@ -89,4 +90,5 @@ assert round(results_main_metric['avg'], 1) == 47.6
 │       │   └── train.s2
 │       └── unsupervised
 │           └── train.txt
+└── tree.txt
 ```
