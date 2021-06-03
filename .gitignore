@@ -132,3 +132,4 @@ dmypy.json
 data-eval
 data-train
 examples/*.json
+*.zip
