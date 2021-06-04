@@ -14,7 +14,7 @@ results, results_main_metric = run(
     semb_fn_twitterpara=semb_fn, 
     semb_fn_scidocs=semb_fn,
     eval_type='test',
-    data_eval_path='../data-eval'
+    data_eval_path='data-eval'
 )
 
 assert round(results_main_metric['avg'], 1) == 47.6

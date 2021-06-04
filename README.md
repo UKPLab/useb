@@ -1,5 +1,5 @@
-# Unsupervised Sentence Embedding Benchmark
-This repository hosts the data and the evaluation script for reproducing the results reported in the paper: "[TSDAE: Using Transformer-based Sequential Denoising Auto-Encoder for Unsupervised Sentence Embedding Learning](https://arxiv.org/abs/2104.06979)". This benchmark contains four heterogeous, task- and domain-specific datasets: AskUbuntu, CQADupStack, TwitterPara and SciDocs. For details, pleasae refer to the paper.
+# Unsupervised Sentence Embedding Benchmark (USEB)
+This repository hosts the data and the evaluation script for reproducing the results reported in the paper: "[TSDAE: Using Transformer-based Sequential Denoising Auto-Encoder for Unsupervised Sentence Embedding Learning](https://arxiv.org/abs/2104.06979)". This benchmark (USEB) contains four heterogeous, task- and domain-specific datasets: AskUbuntu, CQADupStack, TwitterPara and SciDocs. For details, pleasae refer to the paper.
 
 ## Install
 ```python
@@ -10,6 +10,11 @@ python -m unsupse_benchmark.downloading all  # Download both training and evalua
 ```
 
 ## Usage & Example
+After data downloading, one can either run
+```bash
+python examples/eval_sbert.py
+```
+to evaluate an SBERT model on all the datasets; or run this same code below:
 ```python
 from unsupse_benchmark import run
 from sentence_transformers import SentenceTransformer  # SentenceTransformer is an awesome library for providing SOTA sentence embedding methods. TSDAE is also integrated into it.
@@ -31,6 +36,10 @@ results, results_main_metric = run(
 )
 
 assert round(results_main_metric['avg'], 1) == 47.6
+```
+It is also supported to evaluate on a single dataset:
+```bash
+python examples/eval_sbert_askubuntu.py
 ```
 
 ## Data Organization
