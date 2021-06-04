@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="useb",
-    version="0.0.0",
+    version="0.0.1",
     author="Kexin Wang",
     author_email="kexin.wang.2049@gmail.com",
     description="Heterogenous, Task- and Domain-Specific Benchmark for Unsupervised Sentence Embeddings used in the TSDAE paper.",
