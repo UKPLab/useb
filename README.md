@@ -1,5 +1,5 @@
 # Unsupervised Sentence Embedding Benchmark (USEB)
-This repository hosts the data and the evaluation script for reproducing the results reported in the paper: "[TSDAE: Using Transformer-based Sequential Denoising Auto-Encoder for Unsupervised Sentence Embedding Learning](https://arxiv.org/abs/2104.06979)". This benchmark (USEB) contains four heterogeous, task- and domain-specific datasets: AskUbuntu, CQADupStack, TwitterPara and SciDocs. For details, pleasae refer to the paper.
+This repository hosts the data and the evaluation script for reproducing the results reported in the paper: "[TSDAE: Using Transformer-based Sequential Denoising Auto-Encoder for Unsupervised Sentence Embedding Learning](https://arxiv.org/abs/2104.06979)". This benchmark (USEB) contains four heterogeous, task- and domain-specific datasets: [AskUbuntu](https://github.com/taolei87/askubuntu), [CQADupStack](https://github.com/D1Doris/CQADupStack), [TwitterPara](https://www.aclweb.org/anthology/D17-1126/) and [SciDocs](https://github.com/allenai/scidocs). For details, pleasae refer to the paper.
 
 ## Install
 ```python
