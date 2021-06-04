@@ -12,7 +12,7 @@ After data downloading, one can either run
 ```bash
 python -m useb.examples.eval_sbert
 ```
-to evaluate an SBERT model on all the datasets (it needs ~8min on a GPU); or run this same code below:
+to evaluate an [SBERT](https://github.com/UKPLab/sentence-transformers) model on all the datasets (it needs ~8min on a GPU); or run this same code below:
 ```python
 from useb import run
 from sentence_transformers import SentenceTransformer  # SentenceTransformer is an awesome library for providing SOTA sentence embedding methods. TSDAE is also integrated into it.
@@ -99,4 +99,17 @@ python -m useb.examples.eval_sbert_askubuntu
 │       └── unsupervised
 │           └── train.txt
 └── tree.txt
+```
+
+## Citation
+If you use the code for evaluation, feel free to cite our publication [TSDAE: Using Transformer-based Sequential Denoising Auto-Encoderfor Unsupervised Sentence Embedding Learning](https://arxiv.org/abs/2104.06979):
+```bibtex 
+@article{wang-2021-TSDAE,
+    title = "TSDAE: Using Transformer-based Sequential Denoising Auto-Encoderfor Unsupervised Sentence Embedding Learning",
+    author = "Wang, Kexin and Reimers, Nils and  Gurevych, Iryna", 
+    journal= "arXiv preprint arXiv:2104.06979",
+    month = "4",
+    year = "2021",
+    url = "https://arxiv.org/abs/2104.06979",
+}
 ```
