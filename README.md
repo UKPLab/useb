@@ -8,11 +8,11 @@ python -m useb.downloading all  # Download both training and evaluation data
 ```
 
 ## Usage & Example
-After data downloading, one can either run
+After data downloading, one can either run (it needs ~8min on a GPU)
 ```bash
 python -m useb.examples.eval_sbert
 ```
-to evaluate an [SBERT](https://github.com/UKPLab/sentence-transformers) model on all the datasets (it needs ~8min on a GPU); or run this same code below:
+to evaluate an [SBERT](https://github.com/UKPLab/sentence-transformers) model (really an awesome repository for sentence embeddings, and the lastest model there is much better) on all the datasets; or run this same code below:
 ```python
 from useb import run
 from sentence_transformers import SentenceTransformer  # SentenceTransformer is an awesome library for providing SOTA sentence embedding methods. TSDAE is also integrated into it.
