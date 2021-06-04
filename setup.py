@@ -5,14 +5,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
     readme = fh.read()
 
 setup(
-    name="unsupse-benchmark",
+    name="useb",
     version="0.0.0",
     author="Kexin Wang",
     author_email="kexin.wang.2049@gmail.com",
     description="Heterogenous, Task- and Domain-Specific Benchmark for Unsupervised Sentence Embeddings used in the TSDAE paper.",
     long_description=readme,
     long_description_content_type="text/markdown",
-    url="https://github.com/kwang2049/unsupse-benchmark",
+    url="https://github.com/kwang2049/useb",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

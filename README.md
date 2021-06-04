@@ -3,10 +3,10 @@ This repository hosts the data and the evaluation script for reproducing the res
 
 ## Install
 ```python
-git clone https://github.com/kwang2049/unsupse-benchmark.git
-cd unsupse-benchmark
+git clone https://github.com/kwang2049/useb.git
+cd useb
 pip install -e .
-python -m unsupse_benchmark.downloading all  # Download both training and evaluation data
+python -m useb.downloading all  # Download both training and evaluation data
 ```
 
 ## Usage & Example
@@ -14,14 +14,15 @@ After data downloading, one can either run
 ```bash
 python examples/eval_sbert.py
 ```
-to evaluate an SBERT model on all the datasets; or run this same code below:
+to evaluate an SBERT model on all the datasets (it needs ~8min on a GPU); or run this same code below:
 ```python
-from unsupse_benchmark import run
+from useb import run
 from sentence_transformers import SentenceTransformer  # SentenceTransformer is an awesome library for providing SOTA sentence embedding methods. TSDAE is also integrated into it.
 import torch
 
-sbert = SentenceTransformer('bert-base-nli-mean-tokens')
+sbert = SentenceTransformer('bert-base-nli-mean-tokens')  # Build an SBERT model
 
+# The only thing needed for the evaluation: a function mapping a list of sentences into a batch of vectors (torch.Tensor)
 @torch.no_grad()
 def semb_fn(sentences) -> torch.Tensor:
     return torch.Tensor(sbert.encode(sentences, show_progress_bar=False))

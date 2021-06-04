@@ -1,4 +1,4 @@
-from unsupse_benchmark import run
+from useb import run
 from sentence_transformers import SentenceTransformer
 import torch
 
