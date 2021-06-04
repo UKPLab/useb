@@ -3,16 +3,14 @@ This repository hosts the data and the evaluation script for reproducing the res
 
 ## Install
 ```python
-git clone https://github.com/kwang2049/useb.git
-cd useb
-pip install -e .
+pip install useb  # Or git clone and pip install .
 python -m useb.downloading all  # Download both training and evaluation data
 ```
 
 ## Usage & Example
 After data downloading, one can either run
 ```bash
-python examples/eval_sbert.py
+python -m useb.examples.eval_sbert
 ```
 to evaluate an SBERT model on all the datasets (it needs ~8min on a GPU); or run this same code below:
 ```python
@@ -38,9 +36,9 @@ results, results_main_metric = run(
 
 assert round(results_main_metric['avg'], 1) == 47.6
 ```
-It is also supported to evaluate on a single dataset:
+It is also supported to evaluate on a single dataset (please see [useb/examples/eval_sbert_askubuntu.py](useb/examples/eval_sbert_askubuntu.py)):
 ```bash
-python examples/eval_sbert_askubuntu.py
+python -m useb.examples.eval_sbert_askubuntu
 ```
 
 ## Data Organization
