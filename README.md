@@ -113,3 +113,13 @@ If you use the code for evaluation, feel free to cite our publication [TSDAE: Us
     url = "https://arxiv.org/abs/2104.06979",
 }
 ```
+
+Contact person and main contributor: [Kexin Wang](https://kwang2049.github.io/), kexin.wang.2049@gmail.com
+
+[https://www.ukp.tu-darmstadt.de/](https://www.ukp.tu-darmstadt.de/)
+
+[https://www.tu-darmstadt.de/](https://www.tu-darmstadt.de/)
+
+Don't hesitate to send us an e-mail or report an issue, if something is broken (and it shouldn't be) or if you have further questions.
+
+> This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication.
