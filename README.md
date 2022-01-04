@@ -1,5 +1,5 @@
 # Unsupervised Sentence Embedding Benchmark (USEB)
-This repository hosts the data and the evaluation script for reproducing the results reported in the paper: "[TSDAE: Using Transformer-based Sequential Denoising Auto-Encoder for Unsupervised Sentence Embedding Learning](https://arxiv.org/abs/2104.06979)". This benchmark (USEB) contains four heterogeous, task- and domain-specific datasets: [AskUbuntu](https://github.com/taolei87/askubuntu), [CQADupStack](https://github.com/D1Doris/CQADupStack), [TwitterPara](https://www.aclweb.org/anthology/D17-1126/) and [SciDocs](https://github.com/allenai/scidocs). It directly works with [SBERT](https://github.com/UKPLab/sentence-transformers). For details, pleasae refer to the paper.
+This repository hosts the data and the evaluation script for reproducing the results reported in the paper: "[TSDAE: Using Transformer-based Sequential Denoising Auto-Encoder for Unsupervised Sentence Embedding Learning](https://arxiv.org/abs/2104.06979)" (EMNLP 2021 Findings). This benchmark (USEB) contains four heterogeous, task- and domain-specific datasets: [AskUbuntu](https://github.com/taolei87/askubuntu), [CQADupStack](https://github.com/D1Doris/CQADupStack), [TwitterPara](https://www.aclweb.org/anthology/D17-1126/) and [SciDocs](https://github.com/allenai/scidocs). It directly works with [SBERT](https://github.com/UKPLab/sentence-transformers). For details, pleasae refer to the paper.
 
 ## Install
 ```python
@@ -104,13 +104,17 @@ python -m useb.examples.eval_sbert_askubuntu
 ## Citation
 If you use the code for evaluation, feel free to cite our publication [TSDAE: Using Transformer-based Sequential Denoising Auto-Encoderfor Unsupervised Sentence Embedding Learning](https://arxiv.org/abs/2104.06979):
 ```bibtex 
-@article{wang-2021-TSDAE,
-    title = "TSDAE: Using Transformer-based Sequential Denoising Auto-Encoderfor Unsupervised Sentence Embedding Learning",
-    author = "Wang, Kexin and Reimers, Nils and  Gurevych, Iryna", 
-    journal= "arXiv preprint arXiv:2104.06979",
-    month = "4",
+@inproceedings{wang-etal-2021-tsdae-using,
+    title = "{TSDAE}: Using Transformer-based Sequential Denoising Auto-Encoderfor Unsupervised Sentence Embedding Learning",
+    author = "Wang, Kexin and Reimers, Nils and Gurevych, Iryna",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    month = nov,
     year = "2021",
-    url = "https://arxiv.org/abs/2104.06979",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.59",
+    doi = "10.18653/v1/2021.findings-emnlp.59",
+    pages = "671--688",
 }
 ```
 
